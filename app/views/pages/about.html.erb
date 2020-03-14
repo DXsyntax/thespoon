@@ -1,2 +1,13 @@
 <h1>Pages#about</h1>
-<p>test one</p>
+<p>time now is <%= Time.now %></p>
+
+<% versions = ['mark_1', 'mark_2', 'mark_3'] %>
+
+<h2>many versions of iron man</h2>
+
+<ol>
+  <% versions.each do |version| %>
+   <li> <%= version.upcase %> </li>
+  <% end %>
+</ol>
+
